@@ -1,6 +1,6 @@
-import { createClient } from 'redis';
+import * as redis from 'redis';
 
-const client = createClient({
+const client = redis.createClient({
     username: process.env.USERNAME,
     password: process.env.PASSWORD,
     socket: {
